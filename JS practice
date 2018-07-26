@@ -82,4 +82,19 @@ undefined
 'superc'
 > chooseFromString(mergeString);
 'ociou'
+> function swapArray(mergeString) {
+... let firstIndex = pickRandomInt(mergeString);
+... let secondIndex = pickRandomInt(mergeString);
+... let firstItem = mergeString[firstIndex];
+... let secondItem = mergeString[secondIndex];
+... mergeString[firstIndex] = secondItem;
+... mergeString[secondIndex] = firstItem;
+... return mergeString;}
+undefined
+> swapArray(mergeString);
+[ 'superc', 'alifra', 'gilisti', 'exp', 'ociou', 'ealid', 's' ]
+> swapArray(mergeString);
+[ 'superc', 'alifra', 's', 'exp', 'ociou', 'ealid', 'gilisti' ]
+> swapArray(mergeString);
+[ 'exp', 'alifra', 's', 'superc', 'ociou', 'ealid', 'gilisti' ]
 
