@@ -1,0 +1,85 @@
+> (env) user@3g-31:~/src/js-word-scramble$ node --use-strict
+> let greeting = 'Hi, friend
+let greeting = 'Hi, friend
+               ^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+
+> let greeting = 'Hi, friend!';
+undefined
+> let stringSplit = 'How are you doing today?';
+undefined
+> stringSplit.split(' '
+... );
+[ 'How', 'are', 'you', 'doing', 'today?' ]
+> stringSplit.split(' ',4)
+[ 'How', 'are', 'you', 'doing' ]
+> stringSplit.split(' ',6)
+[ 'How', 'are', 'you', 'doing', 'today?' ]
+> stringSplit.split(' ',10);
+[ 'How', 'are', 'you', 'doing', 'today?' ]
+> let mergeString = 
+... ['superc','alifra','gilisti','exp','ealid','ociou','s'];
+undefined
+> mergeString.join('');
+'supercalifragilistiexpealidocious'
+> let chooseRandomInt = Math.floor(Math.random() * 100);
+undefined
+> chooseRandomInt
+96
+> function chooseRandomInt (max) {
+... return Math.floor(Math.random() * Math.floor(max));
+... 
+> function chooseRandomInt(max) {
+... return Math.floor(Math.random() * 
+> function chooseRandomInt(max = mergeString.length) {
+... return Math.floor(Math.random() * max};
+... 
+> function chooseRandomInt(max = mergeString.length) {
+... function chooseRandomInt(max = mergeString.length))};
+... 
+> function chooseRandomInt(max = mergeString.length) {
+... return Math.floor(Math.random() * max
+..... 
+> function chooseRandomInt(mergeString) {
+... return Math.floor(Math.random() * mergeString.length)};
+TypeError: Identifier 'chooseRandomInt' has already been declared
+    at repl:1:1
+    at sigintHandlersWrap (vm.js:22:35)
+    at sigintHandlersWrap (vm.js:73:12)
+    at ContextifyScript.Script.runInThisContext (vm.js:21:12)
+    at REPLServer.defaultEval (repl.js:340:29)
+    at bound (domain.js:280:14)
+    at REPLServer.runBound [as eval] (domain.js:293:12)
+    at REPLServer.<anonymous> (repl.js:539:10)
+    at emitOne (events.js:101:20)
+    at REPLServer.emit (events.js:188:7)
+> function pickRandomInt(mergeString) {
+... return Math.floor(Math.random() * mergeString.length)};
+undefined
+> pickRandomInt(mergeString);
+6
+> pickRandomInt(mergeString);
+0
+> pickRandomInt(mergeString);
+5
+> pickRandomInt(mergeString);
+2
+> pickRandomInt(mergeString);
+3
+> let mergeString = 
+... ['superc','alifra','gilisti','exp','ealid','ociou','s'];
+undefined
+> function pickRandomInt(mergeString) {
+... return Math.floor(Math.random() * mergeString.length)};
+undefined
+> function chooseFromString(mergeString) {
+... return mergeString[pickRandomInt(mergeString)]};
+undefined
+> chooseFromString(mergeString);
+'exp'
+> chooseFromString(mergeString);
+'superc'
+> chooseFromString(mergeString);
+'ociou'
+
